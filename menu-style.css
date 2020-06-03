@@ -79,19 +79,35 @@ p {
 	left: 1em;
 	top: 11.56em;
 	padding: .3em .8em .3em .8em;
-	background: transparent;
+	background: #91a96d;
 	border-radius: 1em;
 	border-style: solid;
+}
+
+.book-consultation:visited {
+	background-color: #65754c;
+	padding: .3em .8em .3em .8em;
 }
 
 .book-consultation:active {
 	border-color: #65754c;
 	background-color: #65754c;
+	color: #fff;
 }
+
+.book-consultation a:link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.book-consultation a:visited {
+	color: #fff;
+}
+
 .button-text {
 	padding: 0;
-	color: white;
 	font-weight: bold;
+	color: #fff;
 }
 
 .button-text:active {
@@ -106,26 +122,29 @@ p {
 	height: 100%;
 	cursor: pointer;
 	padding: .5em;
-	margin-top: 0;
+	margin-top: .35em;
 	overflow: hidden;
 }
 
 .hamburger > span {
 	position: absolute;
 	width: 40%;
-	height: .2em;
+	height: .12em;
 	left: 30%;
 	background-color: white;
+	border-radius: 35em;
 	-webkit-transition: all .25s ease-in-out;
 	transition: all .25s ease-in-out;
 }
 
 .hamburger > span:nth-child(2) {
-	top: 1.6em;
+	height: .12em;
+	top: 1.3em;
 }
 
 .hamburger > span:nth-child(3) {
-	top: 2.7em;
+	height: .12em;
+	top: 2.0em;
 }
 
 
