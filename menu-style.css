@@ -91,7 +91,7 @@ p {
 	z-index: 999;
 	width: 4.8em;
 	height: 3.6em;
-	background-color: #f5d4ba;
+	background-color: #404040;
 	box-shadow: .1em .20em .3em rgba(0,0,0,0.25);
 	padding-top: .5em;
 	padding-left: 100%;
@@ -103,31 +103,31 @@ p {
 	position: fixed;
 	z-index: 9997;
 	left: 8.5em;
-	top: 6.7em;
-	padding: .3em .8em .3em .8em;
-	background: #f5d4ba;
+	top: 6.85em;
+	padding: .2em .8em .2em .8em;
+	background: #404040;
 	border-radius: 1em;
-	border: 0.09em solid #fff;
+	border: 0.09em solid #b5b5b5;
 }
 
 .book-consultation:visited {
-	background-color: #ddb19a;
+	background-color: #404040;
 	padding: .3em .8em .3em .8em;
 }
 
 .book-consultation:active {
-	border-color: #9e7e6d;
-	background-color: #9e7e6d;
-	color: #fff;
+	border-color: #04818c;
+	background-color: #595959;
+	color: #b5b5b5;
 }
 
 .book-consultation a:link {
 	text-decoration: none;
-	color: #fff;
+	color: #b5b5b5;
 }
 
 .book-consultation a:visited {
-	color: #fff;
+	color: #b5b5b5;
 }
 
 .button-text {
@@ -135,11 +135,11 @@ p {
 	font-weight: bold;
 	font-size: 1.1em;
 	letter-spacing: 0.09em;
-	color: #fff;
+	color: #b5b5b5;
 }
 
 .button-text:active {
-	color: #fff;
+	color: #b5b5b5;
 }
 
 
@@ -159,7 +159,7 @@ p {
 	width: 40%;
 	height: .12em;
 	left: 30%;
-	background-color: white;
+	background-color: #c1d9db;
 	border-radius: 35em;
 	-webkit-transition: all .25s ease-in-out;
 	transition: all .25s ease-in-out;
@@ -184,7 +184,7 @@ p {
 	height: 100%;
 	top: 5em;
 	left: 100%;
-	background-color: rgba(245, 212, 186, 0.98);
+	background-color: rgba(64, 64, 64, 0.97);
 	transition: all .25s ease-in-out;
 	-webkit-transition: all .25 ease-in-out;
 
@@ -245,7 +245,7 @@ p {
 	height: 50em;
 	background-image: url("images/lhp-spa-plants-towels.png");
 	background-size: cover;
-	border-bottom: .17em solid #ddb19a;
+	/*border-bottom: .06em solid #323c07;*/
 	
 }
 
@@ -287,7 +287,7 @@ p {
 #footer-nav {
 	display: flex;
 	flex-direction: column;
-	background: #f5d4ba;
+	background: #404040;
 }
 
 #footer-nav ul li {
