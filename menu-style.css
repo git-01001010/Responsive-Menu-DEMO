@@ -17,6 +17,11 @@ html {
 }
 
 @font-face {
+	src: url("fonts/Chiq_Reduced_Light.ttf");
+	font-family: light;
+}
+
+@font-face {
 	src: url("fonts/kaushanScript-Regular.ttf");
 	font-family: my-script;
 }
@@ -62,11 +67,11 @@ p {
 }
 .brand {
 	position: fixed;
-	top: 6.1em;
-	left: .2em;
+	top: 6.3em;
+	left: .6em;
 	display: block;
-	height: 2.4em;
-	width: 5.5em;
+	height: 2em;
+	width: 4em;
 }
 
 /*.mobile-menu-bg {
@@ -86,8 +91,8 @@ p {
 	z-index: 999;
 	width: 4.8em;
 	height: 3.6em;
-	background-color: #ddb19a;
-	box-shadow: .1em .25em .4em rgba(0,0,0,0.4);
+	background-color: #f5d4ba;
+	box-shadow: .1em .20em .3em rgba(0,0,0,0.25);
 	padding-top: .5em;
 	padding-left: 100%;
 	padding-bottom: .5em;
@@ -98,9 +103,9 @@ p {
 	position: fixed;
 	z-index: 9997;
 	left: 8.5em;
-	top: 6.79em;
+	top: 6.7em;
 	padding: .3em .8em .3em .8em;
-	background: #ddb19a;
+	background: #f5d4ba;
 	border-radius: 1em;
 	border: 0.09em solid #fff;
 }
@@ -179,26 +184,35 @@ p {
 	height: 100%;
 	top: 5em;
 	left: 100%;
-	background-color: #ddb19a;
+	background-color: rgba(245, 212, 186, 0.98);
 	transition: all .25s ease-in-out;
 	-webkit-transition: all .25 ease-in-out;
 
 }
 
 .mobile-menu > #toggle-menu > ul {
+	margin-top: 5em;
+	margin-left: 1em;
+	margin-right: 1em;
 	list-style-type: none;
 	padding: 0;
-	text-align: right;
 }
 
 .mobile-menu > #toggle-menu > ul > li {
-	padding: 3em 5em 0 1em;
+	padding: 1em 0em 1em 0em;
+	margin-top: 1em;
+	margin-right: 2em;
+	margin-left: 2em;
+	border-bottom: 0.01em solid #fff;
+	width: 16em;
+	text-align: center;
 }
 
 .mobile-menu > #toggle-menu > ul > li > a {
 	text-decoration: none;
 	font-size: 1.0em;
 	color: #fff;
+
 }
 
 
@@ -229,7 +243,7 @@ p {
 	margin-top: 0;
 	width: 100%;
 	height: 50em;
-	background-image: url("images/c02lifttowelCANDLESrocks.jpg");
+	background-image: url("images/lhp-spa-plants-towels.png");
 	background-size: cover;
 	border-bottom: .17em solid #ddb19a;
 	
@@ -242,7 +256,7 @@ p {
 	line-height: 1.5em;
 	font-family: normal;
 	text-align: center;
-	color: #3c4c0d;
+	color: #364200;
 }
 
 .main-para {
@@ -266,14 +280,14 @@ p {
 
 .flex-item1 {
 	background: transparent;
-	box-shadow: .1em .1em 1em #ccc;
+	/*box-shadow: .1em .1em 1em #ccc;*/
 }
 
 
 #footer-nav {
 	display: flex;
 	flex-direction: column;
-	background: #ddb19a;
+	background: #f5d4ba;
 }
 
 #footer-nav ul li {
@@ -283,8 +297,7 @@ p {
 
 #footer-nav ul li a {
 	text-decoration: none;
-	font-family: normal;
-	font-weight: normal;
+	font-family: light;
 	color: #fff;
 	padding-left: 1em;
 	font-size: .9em;
