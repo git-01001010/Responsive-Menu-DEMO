@@ -1,26 +1,249 @@
 <!-- animated menu with javascript -->
 
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<title>Covid-19 Update Information</title>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Javascript menu</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="New safety measures our company is taking to better protect our valued clients">
-		<meta name="keywords" content="covid, safety, measures, ppe, protective, clean, sterile, spa, hair, care">
-		<meta name="author" content="Nomizo">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<meta name="description" content="Drop down menu created using javascript">
+	<meta name="author" content="Nomizo">
 
-		<link rel="stylesheet" href="menu-style.css">
+	<style>
+		
+		.brand-covid {
+			position: fixed;
+			top: 1.25em;
+			left: .6em;
+			display: block;
+			height: 2em;
+			width: 4em;
+		}
+		.mobile-menu-covid-page {
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 999;
+			width: 4.8em;
+			height: 3.6em;
+			background-color: #404040;
+			box-shadow: .1em .20em .3em rgba(0,0,0,0.25);
+			padding-top: .5em;
+			padding-left: 100%;
+			padding-bottom: .5em;
+		}
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="menu-script.js"></script>
+		.book-consultation-covid-page {
+			position: fixed;
+			z-index: 9997;
+			left: 7.5em;
+			top: .8em;
+			padding: .2em .8em .2em .8em;
+			background: #404040;
+			border-radius: 1em;
+			border: 0.09em solid #b5b5b5;
+		}
 
-	</head>
+		.book-consultation-covid-page:visited {
+			background-color: #404040;
+			padding: .3em .8em .3em .8em;
+		}
 
-	<body>
+		.book-consultation-covid-page:active {
+			border-color: #04818c;
+			background-color: #595959;
+			color: #b5b5b5;
+		}
 
-		<h1>Our New Safety Measures</h1>
-		<p>W</p>
+		.book-consultation-covid-page a:link {
+			text-decoration: none;
+			color: #b5b5b5;
+		}
+
+		.book-consultation-covid-page a:visited {
+			color: #b5b5b5;
+		}
+
+		.mobile-menu-covid-page > #toggle-menu {
+			position: fixed;
+			z-index: 9998;
+			width: 100%;
+			height: 100%;
+			top: 0em;
+			left: 100%;
+			background-color: rgba(64, 64, 64, 0.97);
+			transition: all .25s ease-in-out;
+			-webkit-transition: all .25 ease-in-out;
+
+		}
+
+		.mobile-menu-covid-page > #toggle-menu > ul {
+			margin-top: 5em;
+			margin-left: 1em;
+			margin-right: 1em;
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.mobile-menu-covid-page > #toggle-menu > ul > li {
+			padding: 1em 0em 1em 0em;
+			margin-top: 1em;
+			margin-right: 2em;
+			margin-left: 2em;
+			border-bottom: 0.01em solid #fff;
+			width: 16em;
+			text-align: center;
+		}
+
+		.mobile-menu-covid-page > #toggle-menu > ul > li > a {
+			text-decoration: none;
+			font-size: 1.0em;
+			color: #fff;
+
+		}
+
+		.mobile-menu-covid-page.open > .hamburger > span:nth-child(2) {
+			transform: translateX(-100%);
+			transition: .4s ease-in-out;
+			opacity: 0;
+		}
+
+		.mobile-menu-covid-page.open > .hamburger > span:nth-child(1) {
+			transform: rotateZ(45deg);
+			transition: .4s ease-in-out;
+			top: 1.6em;
+		}
+
+		.mobile-menu-covid-page.open > .hamburger > span:nth-child(3) {
+			transform: rotateZ(-45deg);
+			transition: .4s ease-in-out;
+			top: 1.6em;
+		}
+
+		.mobile-menu-covid-page.open > #toggle-menu {
+			left: 0;
+		}
+
+		.covid-letter-paper {
+			position: absolute;
+			z-index: 3;
+			top: 27em;
+			right: 0;
+			left: 0;
+			margin-right: auto;
+			margin-left: auto;
+			padding: 0 1em;
+			width: 18em;
+			height: 29em;
+			border-radius: 4em;
+			background-color: white;
+			box-shadow: .2em .1em .5em rgba(0,0,0,0.2);
+		}
+
+		.section-covid > h4 {
+			position: relative;
+			z-index: 4;
+			top: 21em;
+			margin-left: 2.5em;
+			margin-right: 2.5em;
+			text-align: center;
+			color: #4e3d38;
+			font-size: 1.4em;
+
+		}
+
+		p.covid-page-main-para {
+			position: relative;
+			z-index: 4;
+			top: 29em;
+			padding-left: 4em;
+			padding-right: 4em;
+			font-family: normal;
+			text-align: center;
+		}
+
+		p.sig {
+			position: absolute;
+			z-index: 5;
+			top:50em;
+			right: 0;
+			left: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		span.sig-font {
+			font-family: my-script;
+			font-size: 1.6em;
+			color: #4e3d38;
+		}
+
+
+	</style>
+
+	<link rel="stylesheet" href="menu-style.css">
+
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="menu-script.js"></script>
+
+
+
+</head>
+
+<body>
+
+<!-- for resoponsive mobile viewing -->
+	<!-- <header id="fixed">
+		<h1 class="header-home-covid-link">NEW Commitment to Health update from company Owner Lisa Greene <a href="covid-information.html">Learn more</a>
+	</header> -->
+
+	
+	<!-- <div class="mobile-menu-bg"> -->
+		<div class="mobile-menu-covid-page"><!-- from hamburger button section to sliding menu -->
+
+			<div class="hamburger"><!-- wrapper background for actual hamburger button alone-->
+				<span></span>
+				<span></span>
+				<span></span>
+			</div><!-- hamburger button wrapper end -->
+
+			
+			<img class="brand-covid" src="images/lhp-logo-anim-java-site.svg">
+			<nav id="toggle-menu"> <!-- fixed toggle sliding menu -->
+				<ul>
+					<li><a href="javascript:void(0)">PRIVATE WIGMAKING WORKSHOPS</a></li>
+					<li><a href="javascript:void(0)">ONE-ON-ONE SPA SERVICES</a></li>
+					<li><a href="javascript:void(0)">WIG REPAIR SERIVCES</a></li>
+					<li><a href="javascript:void(0)">NEW SAFETY MEASURES</a></li>
+				</ul>
+			</nav>
+
+
+			<button class="book-consultation-covid-page"><p class="button-text"><a href="#">Book a consultation</a></p></button>
+
+	<!-- </div> -->
+		</div><!-- mobile menu div closing -->
+
+		
+
+		<div id="covid-image-title">
+			<img class="ppe-image-covid-page" src="images/lhp-ppe.png">
+			<h1 class="covid-title">New Safety Measures to Protect You</h1>
+		</div>
+
+
+			
+		
+		<section class="section-covid">
+			<h4>UPDATE FROM COMPANY OWNER LISA GREENE</h4>
+			<p class="covid-page-main-para">LoreDolore consequat adipisicing laborum fugiat nostrud cupidatat consequat nisi velit laborum dolore id in cupidatat in eu non proident.</p>
+
+			<p class="sig ">CEO | <span class="sig-font">Lisa Greene</span></p>
+			<div class="covid-letter-paper"></div>
+		</section>
 	</body>
 	</html>

@@ -31,6 +31,12 @@ body {
 	overflow: auto;
 }
 
+h1 {
+	text-align: center;
+	font-family: normal;
+	padding: .5em;
+}
+
 h2 {
 	font-size: 1.7em;
 	padding: 1em 1em 0 1em;
@@ -46,7 +52,23 @@ p {
 	line-height: 3em;
 }
 
-.header-covid-link {
+.ppe-image-covid-page {
+	position: absolute;
+	z-index: -1;
+	top: 4.5em;
+	width: 100%;
+}
+
+.covid-title {
+	position: absolute;
+	z-index: 1;
+	top: 6.5em;
+	color: #fff;
+	line-height: 1.5em;
+	text-shadow: .13em .13em 1.5em rgba(0,0,0,1);
+}
+
+.header-home-covid-link {
 	font-size: .8em;
 	color: #2e2e2e;
 	font-weight: normal;
@@ -102,7 +124,7 @@ p {
 .book-consultation {
 	position: fixed;
 	z-index: 9997;
-	left: 8.5em;
+	left: 7.5em;
 	top: 6.85em;
 	padding: .2em .8em .2em .8em;
 	background: #404040;
@@ -240,11 +262,14 @@ p {
 }
 
 #image {
-	margin-top: 0;
+	position: relative;
+	z-index: -1;
+	top: 9em;
 	width: 100%;
-	height: 50em;
-	background-image: url("images/lhp-spa-plants-towels.png");
-	background-size: cover;
+	height: 30em;
+	background-image: url("images/lhp-spa-plants-towels-three.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 	/*border-bottom: .06em solid #323c07;*/
 	
 }
@@ -252,6 +277,7 @@ p {
 
 .center-title {
 	margin: auto;
+	margin-top: .5em;
 	padding-top: 2.5em;
 	line-height: 1.5em;
 	font-family: normal;
