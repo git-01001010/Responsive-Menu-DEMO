@@ -145,7 +145,7 @@
 		.section-covid > h4 {
 			position: relative;
 			z-index: 4;
-			top: 21em;
+			top: 20em;
 			margin-left: 2.5em;
 			margin-right: 2.5em;
 			text-align: center;
@@ -167,20 +167,29 @@
 		p.sig {
 			position: absolute;
 			z-index: 5;
-			top:50em;
+			top:49em;
 			right: 0;
-			left: 0;
+			left: -6em;
 			margin-left: auto;
 			margin-right: auto;
 		}
 
 		span.sig-font {
-			-web-kit-font-family: "fonts/kaushanScript-Regular.ttf";
 			font-family: my-script;
 			font-size: 1.6em;
 			color: #4e3d38;
 		}
 
+		.ceo-signature {
+			position: absolute;
+			z-index: 5;
+			width: 8em;
+			top: 50em;
+			right:0;
+			left:5em;
+			margin-right: auto;
+			margin-left: auto;
+		}
 
 	</style>
 
@@ -243,7 +252,11 @@
 			<h4>UPDATE FROM COMPANY OWNER LISA GREENE</h4>
 			<p class="covid-page-main-para">LoreDolore consequat adipisicing laborum fugiat nostrud cupidatat consequat nisi velit laborum dolore id in cupidatat in eu non proident.</p>
 
-			<p class="sig ">CEO | <span class="sig-font">Lisa Greene</span></p>
+			<p class="sig ">CEO | <!-- <span class="sig-font">Lisa Greene</span> --></p>
+
+			<div>
+				<img class="ceo-signature" src="images/covid-letter-signature.svg">
+			</div>
 			<div class="covid-letter-paper"></div>
 		</section>
 	</body>
