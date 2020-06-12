@@ -35,6 +35,18 @@
 			padding-bottom: .5em;
 		}
 
+		@media only screen and (max-width: 328px) {
+			button.book-consultation-covid-page {
+					position: fixed;
+					z-index: 9997;
+					left: 7.5em;
+					top: 1.5em;
+					padding: .2em .8em .2em .8em;
+					background: #404040;
+					border-radius: 1em;
+					border: 0.09em solid #b5b5b5;
+				}
+		}
 		.book-consultation-covid-page {
 			position: fixed;
 			z-index: 9997;
@@ -172,6 +184,21 @@
 
 		}
 
+
+		@media only screen and (max-width: 328px) {
+			section > p.covid-page-main-para {
+							position: relative;
+							z-index: 4;
+							top: 28em;
+							padding-left: 4em;
+							padding-right: 4em;
+							font-family: normal;
+							text-align: center;
+						}
+		}
+
+/*end of media queries*/
+		
 		p.covid-page-main-para {
 			position: relative;
 			z-index: 4;
@@ -204,7 +231,8 @@
 				margin-left: auto;
 			}
 		}
-
+/* end of media queries */
+		
 		p.sig {
 			position: absolute;
 			z-index: 5;
@@ -294,5 +322,17 @@
 			</div>
 			<div class="covid-letter-paper"></div>
 		</section>
+
+
+		<footer id="footer-nav">
+			<ul class="flex-footer">
+				<li class="flex-link"><a href="#">Privacy Policy</a></li>
+				<li class="flex-link"><a href="#">Terms & Conditions</a></li>
+				<li class="flex-link"><a href="#">Health & Safety</a></li>
+				<li class="flex-link"><a href="#">Contact</a></li>
+			</ul>
+		
+	</footer>
+	
 	</body>
 	</html>
