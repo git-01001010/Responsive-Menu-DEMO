@@ -31,6 +31,8 @@ body {
 	overflow: auto;
 }
 
+
+
 h1 {
 	text-align: center;
 	font-family: normal;
@@ -105,7 +107,11 @@ p {
 	height: 3.6em;
 }*/
 
-/*mobile menu controls everything fixed*/
+/*mobile menu controls everything fixed*/ 
+
+
+
+
 .mobile-menu {
 	position: fixed;
 	top: 5em;
@@ -120,6 +126,9 @@ p {
 	padding-bottom: .5em;
 }
 
+
+
+
 /*consultaion button*/
 .book-consultation {
 	position: fixed;
@@ -130,6 +139,19 @@ p {
 	background: #404040;
 	border-radius: 1em;
 	border: 0.09em solid #b5b5b5;
+}
+
+@media only screen and (max-width: 328px){
+	.book-consultation {
+		position: fixed;
+		z-index: 9997;
+		left: 7.9em;
+		top: 7.85em;
+		padding: .2em .8em .2em .8em;
+		background: #404040;
+		border-radius: 1em;
+		border: 0.05em solid #b5b5b5;
+	}
 }
 
 .book-consultation:visited {
@@ -274,6 +296,17 @@ p {
 	
 }
 
+@media only screen and (max-width: 328px) {
+	section > .center-title {
+		margin: auto;
+		margin-top: .2em;
+		padding-top: 1em;
+		line-height: 1.5em;
+		font-family: normal;
+		text-align: center;
+		color: #364200;
+	}
+}
 
 .center-title {
 	margin: auto;
@@ -284,6 +317,8 @@ p {
 	text-align: center;
 	color: #364200;
 }
+
+
 
 .main-para {
 	color: #2d4d08;
