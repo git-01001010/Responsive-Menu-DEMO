@@ -35,18 +35,7 @@
 			padding-bottom: .5em;
 		}
 
-		@media only screen and (max-width: 328px) {
-			button.book-consultation-covid-page {
-					position: fixed;
-					z-index: 9997;
-					left: 7.5em;
-					top: 1.5em;
-					padding: .2em .8em .2em .8em;
-					background: #404040;
-					border-radius: 1em;
-					border: 0.09em solid #b5b5b5;
-				}
-		}
+	
 		.book-consultation-covid-page {
 			position: fixed;
 			z-index: 9997;
@@ -138,38 +127,12 @@
 			left: 0;
 		}
 
-
-		@media only screen and (max-width: 328px) {
-			div.covid-letter-paper {
-						position: absolute;
-						z-index: 3;
-						top: 23em;
-						right: 0;
-						left: 0;
-						margin-right: auto;
-						margin-left: auto;
-						padding: 0 1em;
-						width: 18em;
-						height: 38em;
-						border-radius: 4em;
-						background-color: white;
-						box-shadow: .2em .1em .5em rgba(0,0,0,0.2);
-					}
+		.ppe-image-covid-page {
+			transition: 1s ease-in-out;
 		}
-		.covid-letter-paper {
-			position: absolute;
-			z-index: 3;
-			top: 25em;
-			right: 0;
-			left: 0;
-			margin-right: auto;
-			margin-left: auto;
-			padding: 0 1em;
-			width: 18em;
-			height: 29em;
-			border-radius: 4em;
-			background-color: white;
-			box-shadow: .2em .1em .5em rgba(0,0,0,0.2);
+
+		.section-covid {
+			padding-bottom: 59em;
 		}
 
 		.section-covid > h4 {
@@ -181,24 +144,26 @@
 			text-align: center;
 			color: #4e3d38;
 			font-size: 1.4em;
+			}
 
+		.covid-letter-paper {
+			position: absolute;
+			z-index: 3;
+			top: 25em;
+			right: 0;
+			left: 0;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 25em;
+			padding: 0 1em;
+			width: 18em;
+			height: 29em;
+			border-radius: 4em;
+			background-color: white;
+			box-shadow: .2em .1em .5em rgba(0,0,0,0.2);
 		}
 
 
-		@media only screen and (max-width: 328px) {
-			section > p.covid-page-main-para {
-							position: relative;
-							z-index: 4;
-							top: 28em;
-							padding-left: 4em;
-							padding-right: 4em;
-							font-family: normal;
-							text-align: center;
-						}
-		}
-
-/*end of media queries*/
-		
 		p.covid-page-main-para {
 			position: relative;
 			z-index: 4;
@@ -209,29 +174,6 @@
 			text-align: center;
 		}
 
-		@media only screen and (max-width: 328px) {
-			section > p.sig {
-				position: absolute;
-				z-index: 5;
-				top:55em;
-				right: 0;
-				left: -6em;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			div > img.ceo-signature {
-				position: absolute;
-				z-index: 5;
-				width: 8em;
-				top: 56em;
-				right:0;
-				left:5em;
-				margin-right: auto;
-				margin-left: auto;
-			}
-		}
-/* end of media queries */
 		
 		p.sig {
 			position: absolute;
@@ -253,6 +195,114 @@
 			margin-right: auto;
 			margin-left: auto;
 		}
+
+		#covid-page-footer-nav {
+			display: flex;
+			flex-direction: column;
+			background: #404040;
+			margin-top: -20em;
+			height: 20em;
+		}
+
+		#covid-page-footer-nav ul li {
+			list-style-type: none;
+			line-height: 3em;
+		}
+
+		#covid-page-footer-nav ul li a {
+			text-decoration: none;
+			font-family: light;
+			color: #fff;
+			padding-left: 1em;
+			font-size: .9em;
+		}
+
+
+		/*media queries begin here*/
+
+		@media only screen and (max-width: 328px) {
+			button.book-consultation-covid-page {
+					position: fixed;
+					z-index: 9997;
+					left: 7.5em;
+					top: 1.5em;
+					padding: .2em .8em .2em .8em;
+					background: #404040;
+					border-radius: 1em;
+					border: 0.09em solid #b5b5b5;
+				}
+		}
+
+		@media only screen and (max-width: 328px) {
+			div.covid-letter-paper {
+						position: absolute;
+						z-index: 3;
+						top: 23em;
+						right: 0;
+						left: 0;
+						margin-right: auto;
+						margin-left: auto;
+						padding: 0 1em;
+						width: 16.5em;
+						height: 38em;
+						border-radius: 4em;
+						background-color: white;
+						box-shadow: .2em .1em .5em rgba(0,0,0,0.2);
+					}
+		}
+
+
+		@media only screen and (max-width: 328px) {
+		.section-covid > h4 {
+			position: relative;
+			z-index: 4;
+			top: 20em;
+			margin-left: 2.5em;
+			margin-right: 2.5em;
+			text-align: center;
+			color: #4e3d38;
+			font-size: 1.4em;
+			}
+		}
+
+
+		@media only screen and (max-width: 328px) {
+			section > p.covid-page-main-para {
+							position: relative;
+							z-index: 4;
+							top: 28em;
+							padding-left: 4em;
+							padding-right: 4em;
+							font-family: normal;
+							text-align: center;
+						}
+		}
+
+
+		@media only screen and (max-width: 328px) {
+			section > p.sig {
+				position: absolute;
+				z-index: 5;
+				top:55em;
+				right: 0;
+				left: -6em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+				div > img.ceo-signature {
+				position: absolute;
+				z-index: 5;
+				width: 8em;
+				top: 56em;
+				right:0;
+				left:5em;
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
+
+/*end of media queries*/
 
 	</style>
 
@@ -288,6 +338,7 @@
 			<img class="brand-covid" src="images/lhp-logo-anim-java-site.svg">
 			<nav id="toggle-menu"> <!-- fixed toggle sliding menu -->
 				<ul>
+					<li><a href="index.html">HOME</a></li>
 					<li><a href="javascript:void(0)">PRIVATE WIGMAKING WORKSHOPS</a></li>
 					<li><a href="javascript:void(0)">ONE-ON-ONE SPA SERVICES</a></li>
 					<li><a href="javascript:void(0)">WIG REPAIR SERIVCES</a></li>
@@ -324,7 +375,7 @@
 		</section>
 
 
-		<footer id="footer-nav">
+		<footer id="covid-page-footer-nav">
 			<ul class="flex-footer">
 				<li class="flex-link"><a href="#">Privacy Policy</a></li>
 				<li class="flex-link"><a href="#">Terms & Conditions</a></li>
